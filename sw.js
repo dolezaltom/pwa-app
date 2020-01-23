@@ -15,6 +15,17 @@ const assets = [
     '/pages/fallback.html'
 ];
 
+const limitCacheSize = (name, size) => {
+    caches.open(name).then(cache => {
+      cache.keys().then(keys => {
+        if(keys.length > size){
+          cache.delete(keys[0]).then(limitCacheSize(name, size));
+        }
+      });
+    });
+  };
+  
+
 self.addEventListener('install', evt => {
     //console.log('service worker installed');
     evt.waitUntil(
@@ -45,6 +56,7 @@ self.addEventListener('fetch', evt => {
             return cacheRes || fetch(evt.request).then(fetchRes => {
                 return caches.open(dynamicCacheName).then(cache => {
                     cache.put(evt.request.url, fetchRes.clone());
+                    limitCacheSize(dynamicCacheName, 15);
                     return fetchRes;
                 })
             });
