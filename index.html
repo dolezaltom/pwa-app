@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>TomFood</title>
+    
     <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="/css/styles.css" rel="stylesheet">
     <script type="text/javascript" src="/js/materialize.min.js"></script>
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
     <meta name="theme-color" content="#FFE1C4">
 </head>
 
-<body class="grey lighten-4">
-
+<body>
     <!-- top nav -->
     <nav class="z-depth-0">
         <div class="nav-wrapper container">
@@ -32,7 +30,7 @@
     <ul id="side-menu" class="sidenav side-menu">
         <li><a class="subheader">TomFood</a></li>
         <li><a href="/" class="waves-effect">Home</a></li>
-        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+        <li><a href="/pages/inspiration.html" class="waves-effect">Inspiration</a></li>
         <li>
             <div class="divider"></div>
         </li>
@@ -41,35 +39,39 @@
         </li>
     </ul>
 
-    <!-- recipes -->
-    <div class="recipes container grey-text text-darken-1">
-       
-    </div>
+    <main class="grey lighten-4">
 
-    <div class="center">
-        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
-            <i class="material-icons">add</i>
-        </a>
-    </div>
+        <!-- recipes -->
+        <div class="recipes container grey-text text-darken-1">
 
-    <!-- add recipe side nav -->
-    <div id="side-form" class="sidenav side-form">
-        <form class="add-recipe container section">
-            <h6>New Recipe</h6>
-            <div class="divider"></div>
-            <div class="input-field">
-                <input placeholder="e.g. Garlic soup" id="title" type="text" class="validate">
-                <label for="title">Recipe Title</label>
-            </div>
-            <div class="input-field">
-                <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-                <label for="ingredients">Ingredients</label>
-            </div>
-            <div class="input-field center">
-                <button class="btn-small">Add</button>
-            </div>
-        </form>
-    </div>
+        </div>
+
+        <div class="center">
+            <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+                <i class="material-icons">add</i>
+            </a>
+        </div>
+
+        <!-- add recipe side nav -->
+        <div id="side-form" class="sidenav side-form">
+            <form class="add-recipe container section">
+                <h6>New Recipe</h6>
+                <div class="divider"></div>
+                <div class="input-field">
+                    <input placeholder="e.g. Garlic soup" id="title" type="text" class="validate">
+                    <label for="title">Recipe Title</label>
+                </div>
+                <div class="input-field">
+                    <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+                    <label for="ingredients">Ingredients</label>
+                </div>
+                <div class="input-field center">
+                    <button class="btn-small">Add</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
