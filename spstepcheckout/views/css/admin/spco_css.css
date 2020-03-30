@@ -1,0 +1,57 @@
+#spco_tabs .tab-row ,
+#spco_tabs .tab-row a{
+	outline:none;
+}
+#spco_content div[id^="fieldset_"]{
+	display:none;
+}
+#spco_content div[id^="fieldset_"].spco-open{
+	display:block;
+}
+
+.spsco-fields-wrap{
+	background-color:#ddd!important;
+	padding:10px;
+}
+
+.spsco-fields-head{
+	padding-bottom:1px;
+}
+
+.spsco-fields-head-inner,
+.spsco-field{
+	background-color:#fff;
+	padding:4px;
+	border-radius:3px;
+	margin:5px 0;
+	vertical-align:middle;
+	
+}
+
+.spsco-fields-head .field-content,
+.spsco-field .field-content{
+	padding:0 5px;
+	border-right:2px solid #ddd;
+	line-height:32px;
+	margin-right:2px;
+	vertical-align:middle;
+}
+
+.spsco-fields-head .field-content{
+	font-weight:bold;
+}
+
+.spsco-fields-head .field-required .field-content,
+.spsco-field .field-required .field-content{
+	border:none;
+}
+
+.spsco-field .field-content .btn-group > a {
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+
+
+
+

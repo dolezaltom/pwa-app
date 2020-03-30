@@ -1,0 +1,597 @@
+/**
+ * package Sp Step Checkout
+ *
+ * @version 1.0.2
+ * @author    MagenTech http://www.magentech.com
+ * @copyright (c) 2016 YouTech Company. All Rights Reserved.
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+#spstepcheckout {
+    position: relative;
+}
+
+#spstepcheckout #spsco_one .fields_container {
+    position: relative;
+}
+
+.spsco_lock {
+    background-color: #FFF;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: block;
+}
+
+.loading_small,
+.spsco-loading-lg {
+    background-color: #FFFFFF;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: none;
+}
+
+.loading_small i.fa,
+.spsco-loading-lg i.fa {
+    left: 48%;
+    top: 50%;
+    position: absolute;
+}
+
+#spstepcheckout label {
+    text-align: inherit;
+}
+
+#spstepcheckout input.disabled,
+#spstepcheckout textarea.disabled,
+#spstepcheckout select.disabled {
+    background-color: #f6f6f6;
+}
+
+#spstepcheckout #spstepchekoutheader {
+    background-color: #fff;
+    margin: 0.5rem 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+#spstepcheckout #spstepchekoutheader #_spstepchekoutinfo h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#spstepcheckout #spstepchekoutheader #_spstepchekoutlogin #btn-logout {
+    padding: 5px;
+    margin-top: 17px;
+}
+
+#spstepcheckout #spstepchekoutheader #_spstepchekoutlogin a {
+    font-size: 1rem;
+}
+
+#spstepcheckout #spstepchekoutheader p {
+    margin: 0;
+}
+
+#spstepcheckout #spsco_wrap {
+    padding: 0;
+}
+
+#spstepcheckout #spsco_two,
+#spstepcheckout #spsco_three,
+#spstepcheckout #spsco_review {
+    margin-top: 0.8em;
+}
+
+#spstepcheckout #spsco_one #_field_required {
+    color: red;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+}
+
+#spstepcheckout #spsco_one .form-group {
+    margin: 0.2em 0;
+    display: block;
+}
+
+#spstepcheckout #spsco_one .container_help_invoice {
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#spstepcheckout #spsco_one .container_help_invoice span {
+    cursor: pointer;
+}
+
+#spstepcheckout #spsco_one label sup {
+    color: red;
+}
+
+#spstepcheckout #spsco_one #p_privacy_policy {
+    margin-bottom: 0;
+}
+
+#spstepcheckout #spsco_one ul.nav-tabs li a {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 6px;
+    text-transform: initial;
+    background: inherit;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#spstepcheckout #spsco_one ul.nav {
+    background: none;
+    z-index: 0;
+    font-size: initial;
+    margin-bottom: 0;
+    margin-top: 0.8em;
+}
+
+#spstepcheckout #spsco_one ul.nav-tabs a.active {
+    background-color: #ffffff;
+    color: inherit !important;
+}
+
+#spstepcheckout #spsco_one ul.nav-tabs li a:hover {
+    color: inherit;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#spstepcheckout #spsco_two .delivery-option {
+    cursor: pointer;
+    padding: 0.2em;
+    margin-bottom: 0;
+}
+
+#spstepcheckout #spsco_two .delivery-option .delivery_option_title {
+    font-size: 0.9rem;
+}
+
+#spstepcheckout #spsco_two .delivery-option .delivery_option_price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+#spstepcheckout #spsco_two #shipping_container .delivery_option_logo {
+    min-width: 110px;
+    padding: 0px 10px;
+}
+
+#spstepcheckout #spsco_two #shipping_container .delivery_option_logo img {
+    max-width: 86px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+#spstepcheckout #spsco_three .module_payment_container {
+    padding: 0.2em;
+}
+
+#spstepcheckout #spsco_three #payment_method_container .module_payment_container.selected {
+    margin-bottom: 0;
+}
+
+#spstepcheckout #spsco_three .module_payment_container .payment_content_html {
+    padding: 0.8em;
+    width: 100%;
+}
+
+#spstepcheckout #spsco_three #payment_method_container .payment_image {
+    min-width: 110px;
+    padding: 0px 10px;
+}
+
+
+#spstepcheckout #spsco_three #payment_method_container .payment_image img {
+    max-width: 86px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+#spstepcheckout #spsco_review {
+    font-size: 0.9rem;
+}
+
+#spstepcheckout #spsco_review_container > h5 {
+    border-bottom: 1px #d3d3d3 solid;
+    padding-bottom: 0 !important;
+    text-transform: uppercase;
+}
+
+#spstepcheckout #spsco_review .bootstrap-touchspin {
+    margin: 0 auto;
+    width: auto;
+    display: table;
+    box-shadow: initial;
+}
+
+#spstepcheckout #spsco_review .bootstrap-touchspin span {
+    float: left;
+    width: auto;
+}
+
+#spstepcheckout #spsco_review .remove-from-cart {
+    display: block;
+    font-size: 1.3rem;
+    float: left;
+    margin-left: 0.2em;
+    margin-top: 0.2em;
+}
+
+#spstepcheckout #spsco_review #header-order-detail-content > {
+    text-decoration: underline;
+}
+
+#spstepcheckout #spsco_review .btn-cotinue-shopping {
+    font-size: 1rem;
+    margin-top: 0.4em;
+}
+
+#spstepcheckout #spsco_review #btn_place_order {
+    font-size: 1.2rem;
+}
+
+#spstepcheckout #spsco_review #btn_place_order:hover,
+#spstepcheckout #spsco_review .btn-cotinue-shopping:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#spstepcheckout #spsco_review #_leave_message > p {
+    margin-bottom: 1em;
+}
+
+#spstepcheckout #spsco_review #_leave_message {
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding-top: 1em;
+}
+
+#spstepcheckout #spsco_review .cart_item {
+    margin-bottom: 1em;
+}
+
+#spstepcheckout #spsco_review .cart_item .s_title_block {
+    margin: 0;
+}
+
+#spstepcheckout #spsco_review #order-detail-content .order_total_items .item_total .price {
+    font-size: 100%;
+}
+
+#spstepcheckout #spsco_review #order-detail-content .order_total_items .item_total {
+    text-align: right;
+}
+
+#spstepcheckout #spsco_review #order-detail-content .image_product {
+    padding-right: 0;
+}
+
+#spstepcheckout #spsco_review #order-detail-content .cart_description .s_title_block {
+    font-size: 0.9rem;
+}
+
+#spstepcheckout #spsco_review #order-detail-content .cart_description,
+#spstepcheckout #spsco_review #order-detail-content .cart_description .label {
+    font-size: 0.7rem;
+}
+
+#spstepcheckout #spsco_review .cart_item img.img-fluid {
+    border: 1px solid #d6d4d4;
+}
+
+#spstepcheckout #spsco_review #block-reassurance .block-reassurance-item {
+    padding: 0.8em 0;
+}
+
+#spstepcheckout #spsco_review #block-reassurance .block-reassurance-item span {
+    font-size: 0.8rem;
+}
+
+#spstepcheckout #spsco_review label.alert {
+    width: 100%;
+}
+
+#spstepcheckout #spsco_login_modal .txt-password,
+#spstepcheckout #spsco_login_modal .txt-email {
+    border-radius: 0;
+    font-size: inherit;
+    line-height: 1.5rem;
+}
+
+#spstepcheckout #spsco_login_form span.form-error {
+    bottom: -1em;
+    position: absolute;
+    left: 50px;
+}
+
+#spstepcheckout #spsco_login_form .has-error .input-group-addon {
+    border-color: #b94a48;
+}
+
+#spstepcheckout #spsco_login_modal .forget_password {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .custom-information {
+        border-top: 1px solid #d6d4d4;
+        padding-top: 6px;
+    }
+
+    .hidden-xs {
+        visibility: hidden;
+    }
+}
+
+.custom-information {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.last_custom {
+    border-bottom: 1px solid #d6d4d4;
+}
+
+#spstepcheckout input.error {
+    outline: 0;
+}
+
+#spstepcheckout select.error {
+    outline: 0;
+}
+
+#spstepcheckout span.form-error {
+    color: red;
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align: left;
+    display: none;
+    line-height: 0.7rem;
+}
+
+#spstepcheckout .hidden {
+    display: none !important;
+}
+
+#ui-datepicker- table td,
+#ui-datepicker- table th {
+    padding: 0;
+}
+
+.theiaStickySidebar {
+    position: initial !important;
+}
+
+
+#spstepcheckout .modal-content {
+    padding: 0;
+    border: 1px solid #d3d3d3;
+}
+
+.st-pusher {
+    position: initial !important;
+}
+
+#spstepcheckout #spsco_review .bootstrap-touchspin .input-group-btn-vertical .btn-touchspin::before {
+    content: ''
+}
+
+#spstepcheckout #spsco_review #block-reassurance li + li {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#spstepcheckout #spsco_one .bestkit_customerattributes p {
+    width: 100%;
+}
+
+#spstepcheckout #spsco_one .bestkit_customerattributes .form-group {
+    float: left;
+}
+
+#spstepcheckout #spsco_one .bestkit_customerattributes .form-group .form-control-valign,
+#spstepcheckout #spsco_one .bestkit_customerattributes .form-group .form-control-comment {
+    padding-top: 0;
+}
+
+#spstepcheckout .checkout_feilds_wrapper {
+    padding: 0;
+}
+
+#spstepcheckout #spsco_two #packetery-widget br {
+    display: none;
+}
+
+#spstepcheckout #spsco_three #block-card-number {
+    width: 100%;
+}
+
+#spstepcheckout .carrier_delay, #spstepcheckout #spsco_three .payment_content {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+#spstepcheckout #spsco_three .payment_content span {
+    font-size: 0.9rem;
+}
+
+#spstepcheckout #spsco_three .payment_content span.pricePayment {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+#checkout .ui-datepicker th {
+    padding: .7em .3em;
+}
+
+#checkout .ui-datepicker td {
+    padding: 1px;
+}
+
+#spsco_one .custom-radio {
+    margin-right: 2px;
+}
+
+#conditions-to-approve,
+#payment_method_container > div:last-child {
+    margin-top: 15px;
+}
+
+.spsco-leave-message {
+    margin-bottom: 15px;
+}
+
+#spsco_three_container,
+#spsco_two_container,
+#spsco_one {
+    margin-bottom: 30px;
+}
+
+#spsco_review {
+    min-height: 200px;
+}
+
+.order_total_items {
+    margin-bottom: 20px;
+}
+
+.spsco-title {
+    padding-bottom: 10px;
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: black;
+	margin: 0px;
+}
+
+.spsco-title::after {
+	content: "";
+	flex-grow: 1;
+	background: black;
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+    margin-right: 0;
+}
+
+#spsco_three.alert-warning {
+    padding: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+#order-detail-content #js-checkout-summary {
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-top: 8px;
+}
+
+#order-detail-content #js-checkout-summary .cart-summary-products {
+    display: none;
+}
+
+#order-detail-content #js-checkout-summary .promo-name.card-block {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#order-detail-content #js-checkout-summary .promo-name.card-block + p {
+    margin: 0;
+}
+
+.cart-detailed-totals .product-line-grid-body > .product-line-info > a.label {
+    font-size: 20px;
+}
+
+.cart-detailed-totals .cart-summary-line .label {
+    font-weight: 400;
+}
+
+.cart-detailed-totals .cart-summary-line.cart-summary-subtotals .value {
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+.cart-detailed-totals .product-line-grid-right .product-price {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#spsco_review .card-block {
+    margin-top: .315rem;
+}
+
+/* #order-detail-content #js-checkout-summary  .cart-summary-line{
+	padding:5px 0;
+}
+ */
+@media all and (max-width: 667px) {
+
+    .delivery_option_logo,
+    .payment_image {
+        display: none !important;
+    }
+
+    .spsco-footer_review {
+        text-align: center;
+    }
+
+    .spsco-footer_review #btn_place_order,
+    .spsco-footer_review .btn-cotinue-shopping {
+        float: none;
+    }
+
+    .product-line-grid-right .price,
+    .product-line-grid-right .qty {
+        width: 100%;
+    }
+
+    .payment_content {
+        float: none;
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{spstepcheckout}prestashop>setupfields_ce26601dac0dea138b7295f02b7620a7'] = 'Zákazník';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_20db0bfeecd8fe60533206a2b5e9891a'] = 'Jméno';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_8d3f5eff9c40ee315d452392bed5309b'] = 'Příjmení';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_ce8ae9da5b7cd6c3df2929543a9af92d'] = 'Email';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_5ef3da0443efa6318d07751b9b680941'] = 'Doručovací adresa';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_c789b445f7b7db9daf56d34293d887c8'] = 'IČ';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Společnost';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_dd7bf230fde8d4836917806aff6a6b27'] = 'Ulice, číslo domu';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_57d056ed0984166336b7879c2af3657f'] = 'Město';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_e4eb5dadb6ee84c5c55a8edf53f6e554'] = 'PSČ';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_59716c97497eb9694541f7c3d37b1a4d'] = 'Země';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_bcc254b55c4a1babdf1dcb82c207506b'] = 'Telefon';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_7cb32e708d6b961d476baced73d362bb'] = 'DIČ';
+$_MODULE['<{spstepcheckout}prestashop>setupfields_74309c1976341518468ba91cd6ff7257'] = 'Fakturační adresa';
+$_MODULE['<{spstepcheckout}prestashop>spstepcheckout_5508a53851720a210e50f7b8a6f66f46'] = 'Před pokračováním musíte souhlasit s obchodními podmínkami a se zpracováním osobních údajů.';
+$_MODULE['<{spstepcheckout}prestashop>spstepcheckout_e2ed016b41a4f46a7358308ae272b888'] = 'Pro zpracování objednávky musíte vyplnit požadované informace.';
+$_MODULE['<{spstepcheckout}prestashop>spstepcheckout_fc0c74cfcaca9626535850211b7bd024'] = 'Zkontrolujte pole, která jsou zvýrazněna a označena hvězdičkou.';
+$_MODULE['<{spstepcheckout}prestashop>spstepcheckout_cb04a2c4073a5078e49c318c322cd086'] = 'Chcete-li pokračovat, vyberte způsob dopravy.';
+$_MODULE['<{spstepcheckout}prestashop>spstepcheckout_78f66140209a4979028fb80f21be5a44'] = 'PSČ je neplatné. Musí být ve formátu: %s';
+$_MODULE['<{spstepcheckout}prestashop>address_acbd4f68b2ca837345b216b38e418b22'] = 'Vaše údaje';
+$_MODULE['<{spstepcheckout}prestashop>address_af0f5bdc5be121b9307687aeeae38c17'] = 'Doručovací adresa';
+$_MODULE['<{spstepcheckout}prestashop>address_601d8c4b9f72fc1862013c19b677a499'] = 'Fakturační adresa';
+$_MODULE['<{spstepcheckout}prestashop>address_84660b67ac3f65f35bbf4efe4d4af7fa'] = 'Chcete zadat jinou fakturační adresu?';
+$_MODULE['<{spstepcheckout}prestashop>address_cce69eaceb571e28e9434059281fb8c0'] = 'jiná fakturační adresa';
+$_MODULE['<{spstepcheckout}prestashop>carrier_4d1c8263ba1036754f8db14a98f9f006'] = 'Aktualizovat';
+$_MODULE['<{spstepcheckout}prestashop>review_footer_617096c86d35478132502be00e12e016'] = 'Poznámka k objednávce';
+$_MODULE['<{spstepcheckout}prestashop>carrier_83d893ae1e34a74ab9a068e1d190c764'] = 'Způsob dopravy';
+$_MODULE['<{spstepcheckout}prestashop>payment_f0aaaae189e9c7711931a65ffcd22543'] = 'Způsob úhrady';
+$_MODULE['<{spstepcheckout}prestashop>review_fe052c248fb8c2b8cf08c44f17341c3c'] = 'Shrnutí objednávky';
